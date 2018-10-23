@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MentorMe</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>MentorMe</title>
+  <%= csrf_meta_tags %>
 
-    </head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<%= render "partials/navigation" %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%= yield %>
+</body>
 </html>
