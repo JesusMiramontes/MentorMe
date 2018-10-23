@@ -10,6 +10,15 @@
         <li class="col-xs">
           <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete%>
         </li>
+        <li class="col-xs">
+          <%= link_to "Cambiar contraseña", edit_user_registration_path%>
+        </li>
+        <li class="col-xs">
+          <%= link_to "Agregar materia", new_topic_path%>
+        </li>
+        <li class="col-xs">
+          <%= link_to "Agregar carrera", new_career_path%>
+        </li>
       <%else%>
         <li class="col-xs">
           <%= link_to "Iniciar sesión", new_user_session_path%>
