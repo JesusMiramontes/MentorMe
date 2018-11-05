@@ -30,6 +30,10 @@ html, body{
   background-color: #1F518B;
 }
 
+.black{
+  background-color: #191B1F;
+}
+
 .blue-font{
   color: #1F518B
 }
@@ -78,6 +82,14 @@ a{
   background-color: red;
   color: white;
   margin-top: 1em;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+nav{
+  color: #5eb6fd !important;
 }
 
 .text-left{

@@ -1,15 +1,14 @@
 <header>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
-  <nav class="be-blue white large-padding bold-font">
+  <nav class="black white large-padding bold-font">
     <ul style="list-style-type: none" class="no-list row center-xs middle-xs">
       <li class="col-xs ">
-        <h1 class="no-marging no-padding" id="logo"><%= link_to "MentorMe", root_path %></h1>
+        <%= link_to image_tag('logo-one-line.png', width: "50%"), root_path%>
       </li>
 
 
       <% if user_signed_in? %>
-        <li class="col-xs">
+        <li class="col-xs" style="">
           <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete%>
         </li>
         <li class="col-xs">
