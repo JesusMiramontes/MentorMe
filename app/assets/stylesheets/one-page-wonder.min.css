@@ -60,7 +60,7 @@ header.masthead {
 	overflow: hidden !important;
 	padding-top: calc(7rem + 72px) !important;
 	padding-bottom: 7rem !important;
-	background: linear-gradient(0deg, blue 0, rgb(94, 182, 253) 100%) !important;
+	background: linear-gradient(0deg, rgb(150,155,255) 0, rgb(94, 182, 253) 100%) !important;
 	background-repeat: no-repeat !important;
 	background-position: center center !important;
 	background-attachment: scroll !important;
@@ -134,8 +134,8 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary {
-	background-color: #ee0979;
-	border-color: #ee0979
+	background-color: rgb(82, 142, 255);
+	border-color: rgb(82, 142, 255);
 }
 
 .btn-primary:active,
