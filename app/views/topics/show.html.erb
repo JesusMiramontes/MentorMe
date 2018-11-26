@@ -12,3 +12,11 @@
 
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
 <%= link_to 'Back', topics_path %>
+
+<ul>
+  <% @topic.professors.each do |professor|%>
+    <li>
+      <%=link_to professor.name, professor%>
+    </li>
+  <%end%>
+</ul>
