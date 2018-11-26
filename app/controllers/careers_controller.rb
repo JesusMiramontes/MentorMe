@@ -24,7 +24,8 @@ class CareersController < ApplicationController
   # POST /careers
   # POST /careers.json
   def create
-    @career = Career.new(career_params)
+    #@career = Career.new(career_params)
+    @career = current_user.careers.new(career_params)
 
     respond_to do |format|
       if @career.save

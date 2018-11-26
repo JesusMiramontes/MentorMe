@@ -24,7 +24,8 @@ class ProfessorsController < ApplicationController
   # POST /professors
   # POST /professors.json
   def create
-    @professor = Professor.new(professor_params)
+    @professor = current_user.professors.new(professor_params)
+    #@professor = Professor.new(professor_params)
 
     respond_to do |format|
       if @professor.save
