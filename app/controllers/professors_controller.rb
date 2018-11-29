@@ -11,6 +11,7 @@ class ProfessorsController < ApplicationController
   # GET /professors/1.json
   def show
     @review = Review.new
+    @textp = Lorem.getRandom
   end
 
   # GET /professors/new
