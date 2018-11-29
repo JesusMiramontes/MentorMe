@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :careers
   has_many :professors
   has_many :topics
+  has_many :reviews
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable

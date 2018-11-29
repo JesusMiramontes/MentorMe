@@ -1,9 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @professor.name %>
-</p>
+<div>
+  <h1 class="masthead-subheading mb-0"><%= @professor.name %></h1>
+</div>
+
+<div style="margin-top: 20px" class="two-div-container">
+  <div class="one">
+    <%= image_tag('man1.jpg', class:"img-fluid rounded-circle", size: 400 )%>
+  </div>
+  <div class="two">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacinia urna. Pellentesque at pretium elit. Vivamus pellentesque semper odio vitae varius. Donec malesuada rhoncus orci quis pulvinar. In sit amet volutpat metus. Donec aliquet finibus enim, in congue dolor vestibulum id. Nulla facilisi. Aenean pharetra turpis id porta aliquam. Phasellus sollicitudin, mi et venenatis bibendum, ipsum quam viverra purus, non suscipit leo velit sed magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In feugiat sed magna ut blandit. Phasellus egestas metus ante, ut rhoncus justo hendrerit at. Proin et erat in mauris dictum accumsan ut et est. Suspendisse ac dignissim odio, at fermentum ipsum. In elit dui, elementum non neque accumsan, mollis malesuada enim.
+    </p>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_professor_path(@professor) %> |
 <%= link_to 'Back', professors_path %>
@@ -15,3 +25,15 @@
     </li>
   <%end%>
 </ul>
+
+<div class="field">
+  <h3>Reseñas</h3>
+  <%= render 'reviews/form' %>
+  <ul>
+    <% @professor.reviews.each do |review|%>
+      <li>
+        <%=review.description%>
+      </li>
+    <%end%>
+  </ul>
+</div>

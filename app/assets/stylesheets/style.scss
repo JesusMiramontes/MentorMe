@@ -156,3 +156,23 @@ nav {
 .blue {
   color: blue !important;
 }
+
+.two-div-container {
+  width: 90%;
+  height: 100%;
+  #background: aqua;
+  margin: auto;
+  padding: 10px;
+}
+.one {
+  width: 20%;
+  height: 100%;
+  #background: red;
+  float: left;
+}
+.two {
+  margin-left: 25%;
+  margin-top: 20px;
+  height: 100%;
+  #background: darkslategrey;
+}
