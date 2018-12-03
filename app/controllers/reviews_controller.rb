@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:show, :index]
+  before_action :authenticate_admin!, only: [:destroy, :create]
   # GET /reviews
   # GET /reviews.json
   def index
@@ -26,7 +27,7 @@ class ReviewsController < ApplicationController
   def create
     #@review = Review.new(review_params)
     @review = current_user.reviews.new(review_params)
-    @review.professor = @professor
+    #@review.professor = @professor.id
     #debug @review
 
     respond_to do |format|

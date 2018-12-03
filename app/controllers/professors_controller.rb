@@ -1,6 +1,7 @@
 class ProfessorsController < ApplicationController
   before_action :set_professor, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:show, :index]
+  before_action :authenticate_admin!, only: [:destroy, :create]
   # GET /professors
   # GET /professors.json
   def index
@@ -69,6 +70,7 @@ class ProfessorsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_professor
       @professor = Professor.find(params[:id])
+      @@professor = Professor.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

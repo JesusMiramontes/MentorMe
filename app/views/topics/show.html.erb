@@ -1,22 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @topic.name %>
-</p>
+<div>
+  <h1 class="masthead-subheading mb-0"><%= @topic.name %></h1>
+</div>
 
 <p>
   <strong>Semester:</strong>
   <%= @topic.semester %>
 </p>
 
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
-<%= link_to 'Back', topics_path %>
+<div class="jcontainer">
+  <h2 class="masthead-subheading mb-0">Profesores que imparten</h2>
+  <ul>
+    <% @topic.professors.each do |professor|%>
+      <li>
+        <%=link_to professor.name, professor%>
+      </li>
+    <%end%>
+  </ul>
+</div>
 
-<ul>
-  <% @topic.professors.each do |professor|%>
-    <li>
-      <%=link_to professor.name, professor%>
-    </li>
-  <%end%>
-</ul>
+<div class="jcontainer" style="margin-top: 20%">
+  <%= link_to 'Edit', edit_topic_path(@topic) %> |
+  <%= link_to 'Back', topics_path %>
+</div>

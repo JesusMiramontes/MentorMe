@@ -16,26 +16,44 @@
 </div>
 
 <div class="jcontainer">
-  <%= link_to 'Edit', edit_professor_path(@professor) %> |
-  <%= link_to 'Back', professors_path %>
-</div>
-
-<ul>
-  <% @professor.topics.each do |topic|%>
-    <li>
-      <%=link_to topic.name, topic%>
-    </li>
-  <%end%>
-</ul>
-
-<div class="field">
-  <h3>Reseñas</h3>
-  <%= render 'reviews/form' %>
+  <h2 class="masthead-subheading mb-0">Clases que imparte</h2>
   <ul>
-    <% @professor.reviews.each do |review|%>
+    <% @professor.topics.each do |topic|%>
       <li>
-        <%=review.description%>
+        <%=link_to topic.name, topic%>
       </li>
     <%end%>
   </ul>
+</div>
+
+<div class="field">
+  <h3 class="masthead-subheading mb-0" style="margin-top: 5%">Reseñas</h3>
+  <div class="reviews-container">
+      <% @professor.reviews.each do |review|%>
+        <div class="review-row">
+            <div class="review-title">
+              <p>Titulo: <%=review.title%></p>
+            </div>
+            <div class="review-score">
+              <p>Calificación: <%=review.score%></p>
+            </div>
+            <div class="review-description">
+              <p>Descripción: <%=review.description%></p>
+            </div>
+            <div class="review-author">
+              <p>Autor: <%= review.user.email %></p>
+            </div>
+        </div>
+      <%end%>
+  </div>
+  <%= render 'reviews/form' %>
+
+</div>
+
+
+
+
+<div class="jcontainer" style="margin-top: 20%">
+  <%= link_to 'Edit', edit_professor_path(@professor) %> |
+  <%= link_to 'Back', professors_path %>
 </div>
