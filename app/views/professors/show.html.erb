@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div class="jcontainer">
+<div class="jcontainer" style="padding-top: 50px">
   <h2 class="masthead-subheading mb-0">Clases que imparte</h2>
   <ul>
     <% @professor.topics.each do |topic|%>
@@ -46,8 +46,10 @@
         </div>
       <%end%>
   </div>
-  <%= render 'reviews/form' %>
+</div>
 
+<div style="padding-top: 30px">
+  <%= render 'reviews/form' %>
 </div>
 
 
