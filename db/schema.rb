@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181126064659) do
+ActiveRecord::Schema.define(version: 20181205175843) do
 
   create_table "careers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -33,6 +33,18 @@ ActiveRecord::Schema.define(version: 20181126064659) do
     t.bigint "professor_id", null: false
     t.index ["professor_id"], name: "index_professors_topics_on_professor_id"
     t.index ["topic_id"], name: "index_professors_topics_on_topic_id"
+  end
+
+  create_table "resenas", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "title"
+    t.decimal "score", precision: 10
+    t.string "description"
+    t.bigint "user_id"
+    t.bigint "professor_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["professor_id"], name: "index_resenas_on_professor_id"
+    t.index ["user_id"], name: "index_resenas_on_user_id"
   end
 
   create_table "reviews", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -72,6 +84,8 @@ ActiveRecord::Schema.define(version: 20181126064659) do
 
   add_foreign_key "careers", "users"
   add_foreign_key "professors", "users"
+  add_foreign_key "resenas", "professors"
+  add_foreign_key "resenas", "users"
   add_foreign_key "reviews", "professors"
   add_foreign_key "reviews", "users"
   add_foreign_key "topics", "users"

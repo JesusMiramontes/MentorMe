@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Resenas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Score</th>
+      <th>Description</th>
+      <th>User</th>
+      <th>Professor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resenas.each do |resena| %>
+      <tr>
+        <td><%= resena.title %></td>
+        <td><%= resena.score %></td>
+        <td><%= resena.description %></td>
+        <td><%= resena.user %></td>
+        <td><%= resena.professor %></td>
+        <td><%= link_to 'Show', resena %></td>
+        <td><%= link_to 'Edit', edit_resena_path(resena) %></td>
+        <td><%= link_to 'Destroy', resena, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resena', new_resena_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  score: 9.99
+  description: MyString
+  user: one
+  professor: one
+
+two:
+  title: MyString
+  score: 9.99
+  description: MyString
+  user: two
+  professor: two

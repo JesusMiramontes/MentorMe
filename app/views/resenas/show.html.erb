@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @resena.title %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @resena.score %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @resena.description %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @resena.user %>
+</p>
+
+<p>
+  <strong>Professor:</strong>
+  <%= @resena.professor %>
+</p>
+
+<%= link_to 'Edit', edit_resena_path(@resena) %> |
+<%= link_to 'Back', resenas_path %>
