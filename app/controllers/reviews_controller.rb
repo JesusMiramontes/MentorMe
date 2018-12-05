@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:show, :index]
-  before_action :authenticate_admin!, only: [:destroy]
+  before_action :authenticate_admin!, except: [:show, :create]
   # GET /reviews
   # GET /reviews.json
   def index

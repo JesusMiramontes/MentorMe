@@ -17,12 +17,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @review.user %>
+  <%= @review.user.email %>
 </p>
 
 <p>
   <strong>Professor:</strong>
-  <%= @review.professor %>
+  <%= @review.professor.name %>
 </p>
 
 <% if user_signed_in? %>
