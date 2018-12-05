@@ -13,17 +13,19 @@ class Prototipo
 
   def self.getLorem(id)
     @id = id.to_i - 1
-    if @id <= @loremParagraphs.size
+    if @id <= @loremParagraphs.count-1
       return @loremParagraphs[@id]
+    else
+      return @loremParagraphs[rand(@loremParagraphs.count)]
     end
-    @loremParagraphs[rand(@loremParagraphs.size)]
   end
 
   def self.getImage(id)
     @id = id.to_i - 1
-    if @id <= @images.size
+    if @id <= @images.count-1
       return @images[@id]
+    else
+      return @images[rand(@images.count)]
     end
-    @images[rand(@images.size)]
   end
 end

@@ -14,7 +14,7 @@ class ProfessorsController < ApplicationController
     @review = Review.new
     @textp = Prototipo.getLorem(params[:id])
     @image = Prototipo.getImage(params[:id])
-  end
+end
 
   # GET /professors/new
   def new

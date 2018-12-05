@@ -1,26 +1,33 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Professors</h1>
+<% @count = 0 %>
+<% @professors.each do |professor| %>
+  <% if @count > 0 %>
+  <div style="padding-top: 210px !important;">
+  <% else %>
+    <div>
+    <% @count = 1 %>
+  <% end %>
+    <div class="two-div-container">
+      <div class="one">
+        <h3 class="masthead-subheading mb-0"><%= professor.name %></h3>
+        <div style="padding-top: 10px"></div>
+        <%= image_tag(Prototipo.getImage(professor.id), class:"img-fluid rounded-circle", size: 400)%>
+      </div>
+      <div class="two">
+        <p style="padding-top: 60px">
+          <%= Prototipo.getLorem(professor.id)[0..300] %>
+        </p>
+        <p>
+          <%= link_to 'Ver profesor', professor %>
+        </p>
+      </div>
+    </div>
+  </div>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @professors.each do |professor| %>
-      <tr>
-        <td><%= professor.name %></td>
-        <td><%= link_to 'Show', professor %></td>
-        <td><%= link_to 'Edit', edit_professor_path(professor) %></td>
-        <td><%= link_to 'Destroy', professor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 
