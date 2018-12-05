@@ -5,5 +5,9 @@
   <%= @career.name %>
 </p>
 
-<%= link_to 'Edit', edit_career_path(@career) %> |
-<%= link_to 'Back', careers_path %>
+<% if user_signed_in? %>
+  <% if current_user.is_admin? %>
+    <%= link_to 'Edit', edit_career_path(@career) %> |
+    <%= link_to 'Back', careers_path %>
+  <% end %>
+<% end %>

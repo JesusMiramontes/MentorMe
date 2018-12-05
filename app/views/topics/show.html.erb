@@ -4,13 +4,17 @@
   <h1 class="masthead-subheading mb-0"><%= @topic.name %></h1>
 </div>
 
-<p>
+<h5 style="padding-top: 30px">
   <strong>Semester:</strong>
   <%= @topic.semester %>
-</p>
+</h5>
+
+<div style="padding-top: 5px">
+  <%= Prototipo.getLorem(@topic.id) %>
+</div>
 
 <div class="jcontainer">
-  <h2 class="masthead-subheading mb-0">Profesores que imparten</h2>
+  <h3 class="masthead-subheading mb-0">Profesores que imparten</h3>
   <ul>
     <% @topic.professors.each do |professor|%>
       <li>
@@ -20,7 +24,11 @@
   </ul>
 </div>
 
-<div class="jcontainer" style="margin-top: 20%">
-  <%= link_to 'Edit', edit_topic_path(@topic) %> |
-  <%= link_to 'Back', topics_path %>
-</div>
+<% if user_signed_in? %>
+  <% if current_user.is_admin? %>
+    <div class="jcontainer" style="margin-top: 20%">
+      <%= link_to 'Edit', edit_topic_path(@topic) %> |
+      <%= link_to 'Back', topics_path %>
+    </div>
+  <% end %>
+<% end %>

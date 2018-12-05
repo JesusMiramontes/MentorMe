@@ -25,5 +25,9 @@
   <%= @review.professor %>
 </p>
 
-<%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+<% if user_signed_in? %>
+  <% if current_user.is_admin? %>
+    <%= link_to 'Edit', edit_review_path(@review) %> |
+    <%= link_to 'Back', reviews_path %>
+  <% end %>
+<% end %>
