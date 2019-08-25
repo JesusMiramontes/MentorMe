@@ -15,7 +15,7 @@ development:
   password:
   host: 127.0.0.1
   port: 3307
-  database: mentorme
+  database: postgresql-silhouetted-42440
   pool: 5
   timeout: 5000
 
