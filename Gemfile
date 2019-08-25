@@ -52,4 +52,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Custom Gems
 # Auth
 gem 'devise'
-gem 'mysql2'
+gem 'sqlite3'

@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4c33f38-4a20-449b-b10f-3832ddc70e73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MentorMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MentorMe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/careers_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/careers_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/professors_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/professors_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/resenas_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/resenas_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/reviews_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/reviews_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/topics_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/topics_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/welcome_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/welcome_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/careers.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/careers.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/professors.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/professors.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/resenas.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/resenas.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/reviews.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/reviews.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/topics.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/topics.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/career_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/career_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/professor_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/professor_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/resena_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/resena_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/review_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/review_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/topic_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/topic_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/user_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/user_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/careers_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/careers_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/professors_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/professors_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/resenas_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/resenas_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/reviews_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/reviews_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/system/topics_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/system/topics_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -82,11 +54,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="783">
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -103,6 +84,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -158,8 +140,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,17 +176,18 @@
       <workItem from="1558729294904" duration="3231000" />
       <workItem from="1559241013100" duration="64000" />
       <workItem from="1566745042806" duration="1492000" />
+      <workItem from="1566751634606" duration="603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4787000" />
+    <option name="totallyTimeSpent" value="5390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -280,6 +263,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
         </state>
       </provider>
     </entry>
