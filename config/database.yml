@@ -14,7 +14,7 @@ development:
   username: root
   password:
   host: 127.0.0.1
-  port: 3306
+  port: 3307
   database: mentorme
   pool: 5
   timeout: 5000
